@@ -2,6 +2,10 @@
 
 (EDIT YOUR VERSION OF THIS FILE)
 
+Author: Britany Goucher
+
+Date: 2026-11
+
 Source: raw JSON object
 Sink: validated JSON object
 
