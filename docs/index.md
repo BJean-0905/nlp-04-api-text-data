@@ -16,6 +16,9 @@ The project demonstrates a modular
 Extract, Validate, Transform, Load (EVTL) pipeline
 with explicit inputs and outputs.
 
+Apply a technical modification to the example project
+and then apply the pipeline to a custom project.
+
 ## Tools and Methods
 
 The project uses:
@@ -56,6 +59,10 @@ The following artifacts are created:
 - `data/raw/case_raw.json` - original API response.
 - `data/processed/case_processed.csv` - transformed dataset.
 
+-data\raw\goucher_raw.json
+-data\processed\goucher_processed.csv
+
+
 These results demonstrate that the pipeline can
 acquire, validate, transform, and persist API data.
 
@@ -87,6 +94,22 @@ the body of the text of each post. Estimated reading time
 was calculated using an average reading speed of 200
 words per minute.
 
+## Custom Project Insights and Interpretations
+
+Following the technical modification pipeline above,
+a new API JSON file was used https://dummyjson.com/quotes.
+The pipeline files were modified for config, pipeline, Stage 2,
+and Stage 3 to reflect the custom project. The counts are easier
+to interpret with this file given it is in english than the example
+file that was in latin. The time to read columns and word count
+is interesting and varies by author. The average word count was
+16 and average reading time was .08. This is a good start to the
+analysis. Recommendations for word cloud visuals and enhancements to
+sentient analysis or bigrams, trigrams may present interesting next
+steps.
+
+![Goucher Processed Data Table](image.png)
+
 ## Documentation Index
 
 - **Home** - this landing page
@@ -95,10 +118,10 @@ words per minute.
 
 ## Project Links
 
-- [GitHub Repository](https://github.com/denisecase/nlp-04-api-text-data)
-- [Example Pipeline](https://github.com/denisecase/nlp-04-api-text-data/blob/main/src/nlp/pipeline_api_json.py)
-- [Example Configuration](https://github.com/denisecase/nlp-04-api-text-data/blob/main/src/nlp/config.py)
-- [Pipeline Stages](https://github.com/denisecase/nlp-04-api-text-data/tree/main/src/nlp)
+- [GitHub Repository](https://github.com/BJean-0905/nlp-04-api-text-data)
+- [Example Pipeline](https://github.com/BJean-0905/nlp-04-api-text-data/blob/main/src/nlp/pipeline_api_json.py)
+- [Example Configuration](https://github.com/BJean-0905/nlp-04-api-text-data/blob/main/src/nlp/config.py)
+- [Pipeline Stages](https://github.com/BJean-0905/nlp-04-api-text-data/tree/main/src/nlp)
 
 ## Project Resources
 

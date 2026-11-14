@@ -136,6 +136,30 @@ The documentation site is used to present the project report,
 covering such sections as data, methods, results, visualizations,
 interpretation, and conclusions.
 
+## Technical Modification
+
+Two fields were added to the example project. Word Count
+and estimated reading time. Word count was calculated from
+the body of the text of each post. Estimated reading time
+was calculated using an average reading speed of 200
+words per minute.
+
+## Custom Project Insights and Interpretations
+
+Following the technical modification pipeline above,
+a new API JSON file was used https://dummyjson.com/quotes.
+The pipeline files were modified for config, pipeline, Stage 2,
+and Stage 3 to reflect the custom project. The counts are easier
+to interpret with this file given it is in english than the example
+file that was in latin. The time to read columns and word count
+is interesting and varies by author. The average word count was
+16 and average reading time was .08. This is a good start to the
+analysis. Recommendations for word cloud visuals and enhancements to
+sentient analysis or bigrams, trigrams may present interesting next
+steps.
+
+![Goucher Processed Data Table](image.png)
+
 ## CI/CD and GitHub Actions
 
 This project includes continuous integration and continuous deployment (CI/CD)
