@@ -79,6 +79,14 @@ The EVTL architecture separates responsibilities,
 making pipeline behavior easier to inspect,
 test, and maintain.
 
+## Technical Modification
+
+Two fields were added to the example project. Word Count
+and estimated reading time. Word count was calculated from
+the body of the text of each post. Estimated reading time
+was calculated using an average reading speed of 200
+words per minute.
+
 ## Documentation Index
 
 - **Home** - this landing page

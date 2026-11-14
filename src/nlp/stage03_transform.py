@@ -71,11 +71,17 @@ def run_transform(
     df: pl.DataFrame = pl.DataFrame(records)
 
     # Derived fields
-    df = df.with_columns(
+    df: pl.DataFrame = df.with_columns(
         [
-            pl.col("title").str.len_chars().alias("title_length"),
-            pl.col("body").str.len_chars().alias("body_length"),
+            pl.col(name="title").str.len_chars().alias(name="title_length"),
+            pl.col(name="body").str.len_chars().alias(name="body_length"),
+            pl.col(name="body").str.split(" ").list.len().alias(name="word_count"),
         ]
+    )
+
+    # Estimated reading time (200 words per minute)
+    df: pl.DataFrame = df.with_columns(
+        (pl.col("word_count") / 200).round(2).alias("reading_time_minutes")
     )
 
     LOG.info("Transformation complete.")
